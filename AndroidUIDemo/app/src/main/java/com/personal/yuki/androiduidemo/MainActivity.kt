@@ -1,5 +1,6 @@
 package com.personal.yuki.androiduidemo
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -21,13 +22,20 @@ class MainActivity : AppCompatActivity() {
 
         // ボタンのタップイベントを登録する
         button.setOnClickListener {
-            // トーストを表示する
-            Toast.makeText(this, "ボタンタップ", Toast.LENGTH_SHORT).show()
+            launchFirstActivity()
         }
 
         val imageView: ImageView = findViewById(R.id.imageView)
         imageView.setOnClickListener {
             println("画像タップ")
         }
+    }
+
+    /**
+     * FirstActivityに遷移する
+     */
+    fun launchFirstActivity() {
+        val intent = Intent(this, FirstActivity::class.java)
+        startActivity(intent)
     }
 }
