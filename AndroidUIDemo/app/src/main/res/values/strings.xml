@@ -4,5 +4,6 @@
     // テキスト
     <string name="sample_text">TextViewのサンプルです。テキストカラーをactivity_main.xmlで定義しています。表示する文字列はstrings.xmlで定義しています。</string>
     // ボタンタイトル
-    <string name="button_title">ボタン</string>
+    <string name="sample_button_title">ボタン</string>
+    <string name="bono_content_description">ぼのぼの</string>
 </resources>

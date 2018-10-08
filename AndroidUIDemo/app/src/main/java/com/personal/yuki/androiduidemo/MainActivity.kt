@@ -3,6 +3,7 @@ package com.personal.yuki.androiduidemo
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 
@@ -22,6 +23,11 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener {
             // トーストを表示する
             Toast.makeText(this, "ボタンタップ", Toast.LENGTH_SHORT).show()
+        }
+
+        val imageView: ImageView = findViewById(R.id.imageView)
+        imageView.setOnClickListener {
+            println("画像タップ")
         }
     }
 }
